@@ -29,7 +29,9 @@ html {
 }
 
 body {
-  font-family: halyard-display, sans-serif;
+  font-family: "Halyard Display", halyard-display, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.6;
   min-height: 100vh;
   background-color: var(--color-offwhite);
@@ -65,7 +67,8 @@ h2 {
   background-color: var(--color-primary);
   border: none;
   color: white;
-  font-family: "Halyard Display", sans-serif;
+  font-family: "Halyard Display", halyard-display, sans-serif;
+  font-style: normal;
   font-weight: 400;
   width: 14rem;
   height: 4rem;
