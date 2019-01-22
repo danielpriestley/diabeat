@@ -5,6 +5,9 @@
     --color-offwhite: #fafafa;
 }
 
+$bp-small: 37.5em; //600px
+
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +24,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -83,6 +90,11 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-small) {
+        max-width: 70vw;
+    }
 
     &-weight {
         position: relative;
@@ -98,7 +110,7 @@ h2 {
     border: 1px solid var(--color-grey-light);
     transition: all .2s;
     font-size: 1.8rem;
-    
+
 
     &:focus {
         outline: none;
@@ -110,19 +122,24 @@ h2 {
 
 .weightInput {
     margin-right: 2.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
 }
 .placeholder {
     position: absolute;
     color: var(--color-grey-light);
 
     &-weight {
-        left: 5px;
-        top: 12px;
+        left: 3px;
+        top: 10px;
     }
 
     &-carbs {
-        left: 5px;
-        top: 12px;
+        left: 3px;
+        top: 10px;
     }
 }
 
@@ -130,6 +147,10 @@ h2 {
 .inputBox:valid ~ .placeholder {
     transition: all .2s;
     top: -20px;
+
+    @media only screen and (max-width: $bp-small) {
+        top: -15px;
+    }
 }
 
 .outputs {
