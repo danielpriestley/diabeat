@@ -108,6 +108,7 @@ h2 {
   border: 1px solid var(--color-grey-light);
   transition: all 0.2s;
   font-size: 1.8rem;
+  background-clip: padding-box;
 }
 .inputBox:focus {
   outline: none;
