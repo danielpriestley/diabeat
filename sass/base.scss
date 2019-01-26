@@ -113,7 +113,7 @@ h2 {
     transition: all .2s;
     font-size: 1.8rem;
     background-clip: padding-box;
-
+    text-align: center;
 
 
     &:focus {
@@ -135,14 +135,15 @@ h2 {
 .placeholder {
     position: absolute;
     color: var(--color-grey-light);
+    font-size: 1.3rem;
 
     &-weight {
-        left: 3px;
+        left: 6px;
         top: 10px;
     }
 
     &-carbs {
-        left: 3px;
+        left: 6px;
         top: 10px;
     }
 }
@@ -151,6 +152,9 @@ h2 {
 .inputBox:valid ~ .placeholder {
     transition: all .2s;
     top: -20px;
+    transform: scale(0.9);
+    color: var(--color-grey-dark);
+    left: -4px;
 
     @media only screen and (max-width: $bp-small) {
         top: -15px;

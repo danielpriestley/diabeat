@@ -109,6 +109,7 @@ h2 {
   transition: all 0.2s;
   font-size: 1.8rem;
   background-clip: padding-box;
+  text-align: center;
 }
 .inputBox:focus {
   outline: none;
@@ -129,13 +130,14 @@ h2 {
 .placeholder {
   position: absolute;
   color: var(--color-grey-light);
+  font-size: 1.3rem;
 }
 .placeholder-weight {
-  left: 3px;
+  left: 6px;
   top: 10px;
 }
 .placeholder-carbs {
-  left: 3px;
+  left: 6px;
   top: 10px;
 }
 
@@ -143,6 +145,9 @@ h2 {
 .inputBox:valid ~ .placeholder {
   transition: all 0.2s;
   top: -20px;
+  transform: scale(0.9);
+  color: var(--color-grey-dark);
+  left: -4px;
 }
 @media only screen and (max-width: 37.5em) {
   .inputBox:focus ~ .placeholder,

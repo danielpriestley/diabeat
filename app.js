@@ -6,7 +6,7 @@ var calculate = document.querySelector(".calculateButton")
 function calcCarbs() {
     // convertStrings();
     var totalCarbs = (weight.value / 100) * carbInput.value;
-    output.textContent = totalCarbs + 'g';
+    output.textContent = totalCarbs.toFixed(2) + 'g';
 }
 
 
