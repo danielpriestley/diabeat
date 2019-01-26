@@ -131,6 +131,7 @@ h2 {
   position: absolute;
   color: var(--color-grey-light);
   font-size: 1.3rem;
+  pointer-events: none;
 }
 .placeholder-weight {
   left: 6px;
@@ -182,6 +183,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-grey-dark);
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
