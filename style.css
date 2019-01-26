@@ -153,7 +153,8 @@ h2 {
 @media only screen and (max-width: 37.5em) {
   .inputBox:focus ~ .placeholder,
 .inputBox:valid ~ .placeholder {
-    top: -15px;
+    top: -18px;
+    left: -2px;
   }
 }
 
